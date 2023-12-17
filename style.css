@@ -143,12 +143,13 @@ body {
   .container__game {
     max-width: 375px;
     height: 1221px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /*display: grid;
+    grid-template-columns: repeat(4, 1fr);*/
+    display: flex;
+    flex-direction: column;
     gap: 32px;
   }
   .container__game-box {
     width: 343px;
-    grid-column: span 4;
   }
 }/*# sourceMappingURL=style.css.map */
