@@ -101,6 +101,47 @@ body {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./images/game2.png) lightgray 50%/cover no-repeat;
 }
 
-images .game3 {
+.game3 {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./images/game3.png) lightgray 50%/cover no-repeat;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    width: 375px;
+    height: 735px;
+    gap: 32px;
+  }
+  .top__header {
+    width: 343px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 238px;
+  }
+  .top__header-title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .top__header-text {
+    text-align: center;
+    font-size: 14px;
+  }
+  .top__header-bold {
+    font-size: 14px;
+  }
+  .container__game {
+    max-width: 375px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .container__game-box {
+    width: 343px;
+    grid-column: span 4;
+  }
 }/*# sourceMappingURL=style.css.map */
