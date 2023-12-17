@@ -114,28 +114,35 @@ body {
     width: 375px;
     height: 735px;
     gap: 32px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(./images/mobile-bg.jpg), lightgray -240.259px 0px/294% 100% no-repeat;
   }
   .top__header {
     width: 343px;
-    height: 77px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 238px;
   }
   .top__header-title {
+    width: 343px;
     text-align: center;
     font-size: 32px;
   }
   .top__header-text {
+    width: 343px;
     text-align: center;
     font-size: 14px;
+    line-height: 22px;
   }
   .top__header-bold {
     font-size: 14px;
   }
+  .top__button {
+    align-self: center;
+    margin-top: 0;
+  }
   .container__game {
     max-width: 375px;
+    height: 1221px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
