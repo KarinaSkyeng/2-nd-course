@@ -1,5 +1,5 @@
 // 1
-let a = 10;
+var a = 10;
 alert(a);
 a = 20;
 alert(a);
@@ -13,8 +13,8 @@ let creatorOfJavaScript = "Brendan Eich";
 alert(creatorOfJavaScript);
 
 // 4
-let num1 = 10;
-let num2 = 2;
+var num1 = 10;
+var num2 = 2;
 alert("Sum: " + (num1 + num2)); // Сумма
 alert("Subtraction: " + (num1 - num2)); //Разность (вычитание)
 alert("Multiplication: " + (num1 * num2)); //Произведение (умножение)
