@@ -54,7 +54,7 @@ let user = {
   console.log(user);
 
 // 9.1
-user.cityOfResidence = "Oviedo"; //через точку
+user["cityOfResidence"] = "Oviedo";
 console.log("User after task 9.1:", user);
 
 // 9.2
@@ -62,7 +62,7 @@ user.age = 30;
 console.log("User after task 9.2:", user);
 
 // 9.3
-delete user.cityOfResidence;
+delete user["cityOfResidence"];
 console.log("User after task 9.3:", user);
 
 // 9.4
