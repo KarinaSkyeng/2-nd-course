@@ -83,11 +83,61 @@ let userInput = prompt('Введите пароль:');
 
 if (userInput === correctPassword) {
   console.log('Пароль введен верно');
-} else {
+} 
+else {
   console.log('Пароль введен неправильно');
 }
 
   // 2
 
-  
+  let c;
 
+  c = 0;
+  if (c > 0 && c < 10) {
+    console.log('Верно');
+  } 
+  else {
+    console.log('Неверно');
+  }
+
+  c = 10;
+if (c > 0 && c < 10) {
+  console.log('Верно');
+} 
+else {
+  console.log('Неверно');
+}
+
+c = -3;
+if (c > 0 && c < 10) {
+  console.log('Верно');
+} 
+else {
+  console.log('Неверно');
+}
+
+c = 2;
+if (c > 0 && c < 10) {
+  console.log('Верно');
+} 
+else {
+  console.log('Неверно');
+}
+
+// 3
+
+let d = 80;
+let e = 120;
+
+if (d > 100 || e > 100) {
+  console.log('Верно');
+} 
+else {
+  console.log('Неверно');
+}
+
+// 4
+let a_2 = '2';
+let b_2 = '3';
+
+alert(Number(a_2) + Number(b_2));
