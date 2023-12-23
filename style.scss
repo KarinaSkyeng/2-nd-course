@@ -109,5 +109,57 @@
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./images/game3.png) lightgray 50%/cover no-repeat;
   }
 
+  .seasons {
+    height: 800px;
+    background: #000915;
+    display: flex;
+    align-items: center;
+    gap: 135px;
+  
+    &__gamer {  
+      width: 584px;    
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      
+    &-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      &-text {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+      }      
+    }
+      &__button1 {
+        width: 234px;
+        height: 49px;
+        border-radius: 30px;
+        border: none;
+        background: #9C0332;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;       
+   }
+  }
+
+  .seasons__image {
+    width: 485px;
+    height: 333px;   
+  }
+
   @import "mobile";
   

@@ -74,5 +74,20 @@ console.log("User after task 9.4:", user);
 let userName = prompt ("Введите Ваше имя");
 alert(`Привет, ${userName}!`)
 
+// hw-3
+// 1
+
+let correctPassword = 'пароль';
+
+let userInput = prompt('Введите пароль:');
+
+if (userInput === correctPassword) {
+  console.log('Пароль введен верно');
+} else {
+  console.log('Пароль введен неправильно');
+}
+
+  // 2
+
   
 
