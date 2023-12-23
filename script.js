@@ -141,3 +141,88 @@ let a_2 = '2';
 let b_2 = '3';
 
 alert(Number(a_2) + Number(b_2));
+
+// 5
+
+let monthNumber = 12;
+
+if (monthNumber >= 1 && monthNumber <= 12) {
+  switch (monthNumber) {
+    case 1:
+    case 2:
+    case 12:
+      console.log('Сезон: Зима');
+      break;
+    case 3:
+    case 4:
+    case 5:
+      console.log('Сезон: Весна');
+      break;
+    case 6:
+    case 7:
+    case 8:
+      console.log('Сезон: Лето');
+      break;
+    case 9:
+    case 10:
+    case 11:
+      console.log('Сезон: Осень');
+      break;
+    default:
+      console.log('Что-то пошло не так');
+  }
+} else {
+  console.log('Неверный номер месяца');
+}
+
+// Доп.задания - 7 
+
+let userInput1 = prompt('Пожалуйста, введите любое число:');
+
+let userNumber = parseFloat(userInput1);
+
+if (!isNaN(userNumber)) {
+  if (userNumber % 2 === 0) {
+    alert('Число четное');
+  } else {
+    alert('Число нечетное');
+  }
+} else {
+  alert('Введено некорректное значение. Пожалуйста, введите число.');
+}
+
+// 8
+
+let clientOS = 0;
+
+if (clientOS === 0) {
+  console.log('Установите версию приложения для iOS по ссылке');
+} else if (clientOS === 1) {
+  console.log('Установите версию приложения для Android по ссылке');
+} else {
+  console.log('Некорректное значение для типа операционной системы');
+}
+
+// 9
+
+let clientiOS = prompt('Введите 0, если используете iOS, или 1, если используете Android');
+let clientDeviceYear = prompt('Введите год производства телефона');
+
+if (clientiOS === '0') {
+  if (clientDeviceYear >= 2015) {
+    console.log('Установите версию приложения для iOS по ссылке');
+  } else {
+    console.log('Установите облегченную версию приложения для iOS по ссылке');
+  }
+} else if (clientiOS === '1') {
+  if (clientDeviceYear >= 2015) {
+    console.log('Установите версию приложения для Android по ссылке');
+  } else {
+    console.log('Установите облегченную версию приложения для Android по ссылке');
+  }
+} else {
+  console.log('Некорректное значение для типа операционной системы');
+}
+
+// 9 
+
