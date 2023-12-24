@@ -18,6 +18,9 @@ body {
 }
 
 .top {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   height: 1024px;
   padding-top: 217px;
   position: relative;
@@ -67,6 +70,9 @@ body {
   font-weight: 400;
   line-height: normal;
   margin-top: 44px;
+}
+.top__button:hover {
+  cursor: pointer;
 }
 
 .container__game {
@@ -149,18 +155,53 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+.seasons__button1:hover {
+  cursor: pointer;
+}
 
 .seasons__image {
   width: 485px;
   height: 333px;
 }
 
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top__header-title {
+    font-size: 48px;
+  }
+  .container__game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 1221px;
+    gap: 32px;
+  }
+  .seasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
   .top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     height: 735px;
     gap: 32px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(./images/mobile-bg.jpg), lightgray -240.259px 0px/294% 100% no-repeat;
@@ -194,7 +235,9 @@ body {
     /*display: grid;
     grid-template-columns: repeat(4, 1fr);*/
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
     gap: 32px;
   }
   .container__game-box {
@@ -206,6 +249,7 @@ body {
     flex-direction: column;
     align-items: center;
     align-content: center;
+    padding-top: 51px;
   }
   .seasons__gamer {
     width: 343px;

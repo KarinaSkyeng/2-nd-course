@@ -19,6 +19,9 @@
   }
 
   .top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     height: 1024px;
     padding-top: 217px;
     position: relative;
@@ -69,6 +72,9 @@
         font-weight: 400;
         line-height: normal;
         margin-top: 44px;
+        &:hover {
+          cursor: pointer;
+        }
      }
 }
 
@@ -80,7 +86,7 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
 
-        &-box {
+        &-box {          
         width: 379px;
         height: 300px;
         border-radius: 16px;             
@@ -152,13 +158,52 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;       
+        line-height: normal;
+        &:hover {
+          cursor: pointer;
+        }       
    }
   }
 
   .seasons__image {
     width: 485px;
     height: 333px;   
+  }
+
+  @media (max-width: 1024px) {
+    .center {
+      padding-left: calc(50% - 600px);
+      padding-right: calc(50% - 600px);
+    }
+    
+  }
+
+  @media (min-width: 768px) and (max-width: 833px) {
+    .center {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  
+    .top__header-title {
+      font-size: 48px;
+    }
+
+    .container__game {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 1221px;
+      gap: 32px
+    }
+
+    .seasons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    }
+
   }
 
   @import "mobile";
