@@ -76,12 +76,11 @@ body {
 }
 
 .container__game {
-  height: 556px;
   gap: 32px;
-  padding-top: 128px;
   background: #000915;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 128px;
 }
 .container__game-box {
   width: 379px;
@@ -115,7 +114,7 @@ body {
   height: 800px;
   background: #000915;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 135px;
 }
 .seasons__gamer {
@@ -181,9 +180,8 @@ body {
   .container__game {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    height: 1221px;
     gap: 32px;
+    padding-bottom: 128px;
   }
   .seasons {
     display: flex;
@@ -191,6 +189,7 @@ body {
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    padding-top: 51px;
   }
 }
 @media (max-width: 767px) {
@@ -199,18 +198,16 @@ body {
     padding-right: 16px;
   }
   .top {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     height: 735px;
     gap: 32px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(./images/mobile-bg.jpg), lightgray -240.259px 0px/294% 100% no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
   }
   .top__header {
     width: 343px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .top__header-title {
     width: 343px;
@@ -231,13 +228,9 @@ body {
     margin-top: 0;
   }
   .container__game {
-    height: 1221px;
-    /*display: grid;
-    grid-template-columns: repeat(4, 1fr);*/
+    padding-bottom: 128px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
     gap: 32px;
   }
   .container__game-box {

@@ -1,23 +1,22 @@
+
 @media (max-width: 767px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
       }
 
-    .top {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+    .top {        
         height: 735px;
         gap: 32px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url(./images/mobile-bg.jpg), lightgray -240.259px 0px / 294% 100% no-repeat;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
 
         &__header {
             width: 343px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            
+                        
             &-title {
                 width: 343px;
                 text-align: center;
@@ -39,21 +38,16 @@
         }
     }
 
-    .container__game {
-        
-        height: 1221px;
-        /*display: grid;
-        grid-template-columns: repeat(4, 1fr);*/
+    .container__game {     
+        padding-bottom: 128px;       
         display: flex;
         flex-wrap: wrap;        
-        flex-direction: column;
-        align-items: center;
         gap: 32px;
         &-box {
             width: 343px;            
         }
-
-    }
+    } 
+    
     // hw-3
 
     .seasons {
@@ -68,7 +62,7 @@
     .seasons__gamer {
         width: 343px;
         align-items: center;
-
+    
         &-title {
             text-align: center;
             font-size: 32px;
@@ -82,12 +76,11 @@
             line-height: 22px;
         }
     }
-
+    
     .seasons__image {
         width: 344px;
         height: 236px;
     }
-
 }
 
 
