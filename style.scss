@@ -14,8 +14,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 704px);
+  padding-right: calc(50% - 704px);
 }
 
 .top {
@@ -82,8 +82,9 @@ body {
       gap: 32px;         
       background: #000915;
       display: flex;
-      flex-wrap: wrap;      
+      flex-wrap: wrap;            
       padding-top: 128px;
+      padding-bottom: 128px;
 
       &-box {          
       width: 379px;
@@ -118,7 +119,8 @@ body {
   height: 800px;
   background: #000915;
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+  align-items: center;  
   gap: 135px;
   
 
@@ -172,8 +174,8 @@ body {
 
 @media (max-width: 1024px) {
   .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 496px);
+    padding-right: calc(50% - 496px);
   }
   
 }
