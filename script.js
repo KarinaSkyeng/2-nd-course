@@ -82,10 +82,10 @@ let correctPassword = 'пароль';
 let userInput = prompt('Введите пароль:');
 
 if (userInput === correctPassword) {
-  console.log('Пароль введен верно');
+  alert('Пароль введен верно');
 } 
 else {
-  console.log('Пароль введен неправильно');
+  alert('Пароль введен неправильно');
 }
 
   // 2
