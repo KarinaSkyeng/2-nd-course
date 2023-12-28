@@ -56,12 +56,12 @@
         flex-direction: column;
         align-items: center;
         align-content: center;
-        padding-top: 51px;
+        padding-top: 51px;        
     }
     
     .seasons__gamer {
         width: 343px;
-        align-items: center;
+        align-items: center;        
     
         &-title {
             text-align: center;
@@ -80,6 +80,39 @@
     .seasons__image {
         width: 344px;
         height: 236px;
+    }
+
+    .remember {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        padding-top: 51px;
+
+        &__image {
+            width: 344px;
+            height: 231px;
+        }
+
+        &__box {
+            width: 343px;
+        align-items: center;
+    
+        &-title {
+            text-align: center;
+            font-size: 32px;
+        }
+        &-text {
+            width: 343px;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+        }
+        }
     }
 }
 
