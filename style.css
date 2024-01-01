@@ -102,13 +102,22 @@ body {
 .game1 {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./images/game1.png) lightgray 50%/cover no-repeat;
 }
+.game1:hover {
+  cursor: url(./images/Vector.svg), pointer;
+}
 
 .game2 {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./images/game2.png) lightgray 50%/cover no-repeat;
 }
+.game2:hover {
+  cursor: url(./images/Vector.svg), pointer;
+}
 
 .game3 {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./images/game3.png) lightgray 50%/cover no-repeat;
+}
+.game3:hover {
+  cursor: url(./images/Vector.svg), pointer;
 }
 
 .seasons {
@@ -214,7 +223,7 @@ body {
   line-height: normal;
 }
 .remember__button2:hover {
-  cursor: pointer;
+  cursor: url(./images/Vector.svg), pointer;
 }
 
 .riddle {
