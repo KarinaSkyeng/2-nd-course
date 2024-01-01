@@ -73,7 +73,7 @@ body {
       line-height: normal;
       margin-top: 44px;
       &:hover {
-        cursor: pointer;
+        cursor: url(./images/Vector.svg), pointer;
       }
    }
 }
@@ -162,14 +162,13 @@ body {
       font-weight: 400;
       line-height: normal;
       &:hover {
-        cursor: pointer;
+        cursor: url(./images/Vector.svg), pointer;
       }       
  }
-}
-
-.seasons__image {
-  width: 485px;
-  height: 333px;   
+    &__image {
+      width: 485px;
+      height: 333px;   
+    }
 }
 
 .remember {
@@ -225,6 +224,73 @@ body {
         cursor: pointer;
       }       
  }
+}
+
+.riddle {
+  height: 800px;
+  background: url(./images/unsplash_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;      
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__text {        
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  &__button2 {
+    width: 234px;
+    height: 49px;
+    border-radius: 30px;
+    border: none;
+    background: #9C0332;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &:hover {
+      cursor: url(./images/Vector.svg), pointer; 
+  }  
+}
+}
+
+.footer {
+height: 80px;
+background: #000915;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+
+&__text {
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 }
 
 @media (max-width: 1024px) {

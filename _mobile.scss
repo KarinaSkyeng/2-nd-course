@@ -114,6 +114,25 @@
         }
         }
     }
+     
+    //5 
+    .riddle {
+        display: flex;
+        flex-wrap: wrap;     
+        align-items: center;
+        align-content: center;
+        justify-content: flex-start;
+        
+        &__title {
+            font-size: 32px;
+        }
+        &__text {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+        }
+    }
 }
 
 

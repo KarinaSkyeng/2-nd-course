@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hw-4</title>
+    <title>hw-5</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
@@ -26,7 +26,9 @@
     <div class="seasons__gamer">
         <h1 class="seasons__gamer-title">Времена года!</h1>
         <p class="seasons__gamer-text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-        <button class="seasons__button1">Играть!</button>
+        <input type="number" id="monthInput" placeholder="Введите номер месяца">
+        <button id="playSeasonButton" class="seasons__button1" onclick="playSeasonGame()">Играть!</button>
+        <p id="resultText"></p>
     </div>
         <div class="seasons__image">
             <img class="seasons__image" src="./images/undraw_video_game.svg" alt="videopicture">
@@ -42,6 +44,18 @@
         <button class="remember__button2">Играть</button>
     </div>
  </div>
- <script src="script.js"></script>
+ <div class="riddle center">
+    <h1 class="riddle__title">Игра в загадки</h1>
+    <p class="riddle__text">
+      Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите
+      не правильный ответ, то компьютер даст вам подсказку. У вас будет три
+      попытки и две подсказки.
+    </p>
+    <button class="riddle__button2">Играть!</button>
+  </div>
+  <div class="footer center">
+    <p class="footer__text">Все права защищены</p>
+  </div>
+ <script src="script-5.js"></script> 
 </body>
 </html>
