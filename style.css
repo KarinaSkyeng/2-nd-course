@@ -104,6 +104,7 @@ body {
 }
 .game1:hover {
   cursor: url(./images/Vector.svg), pointer;
+  border: 3px solid #44D2FF;
 }
 
 .game2 {
@@ -111,6 +112,7 @@ body {
 }
 .game2:hover {
   cursor: url(./images/Vector.svg), pointer;
+  border: 3px solid #44D2FF;
 }
 
 .game3 {
@@ -118,6 +120,7 @@ body {
 }
 .game3:hover {
   cursor: url(./images/Vector.svg), pointer;
+  border: 3px solid #44D2FF;
 }
 
 .seasons {

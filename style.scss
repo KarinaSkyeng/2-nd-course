@@ -107,6 +107,7 @@ body {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./images/game1.png) lightgray 50%/cover no-repeat;
   &:hover {
     cursor: url(./images/Vector.svg), pointer;
+    border: 3px solid #44D2FF;
   }
 }
 
@@ -114,6 +115,7 @@ body {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./images/game2.png) lightgray 50%/cover no-repeat;
   &:hover {
     cursor: url(./images/Vector.svg), pointer;
+    border: 3px solid #44D2FF;
   }
 }
 
@@ -121,6 +123,7 @@ body {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./images/game3.png) lightgray 50%/cover no-repeat;
   &:hover {
     cursor: url(./images/Vector.svg), pointer;
+    border: 3px solid #44D2FF;
   }
 }
 
