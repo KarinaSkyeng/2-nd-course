@@ -132,38 +132,21 @@ console.log("Площадь circle2:", circle2.getArea());
 console.log("Периметр circle2:", circle2.getPerimeter());
 
 // 8 
-document.addEventListener("DOMContentLoaded", function () {
-    const playSeasonButton = document.getElementById("playSeasonButton");
-    if (playSeasonButton) {
-        playSeasonButton.addEventListener("click", playSeasonGame);
-    } else {
-        console.error("Кнопка 'Играть!' не найдена");
-    }
-});
-
-function getSeason(month) {
+function getSeason() {
+    let month = prompt("Введите число");
     if (month >= 1 && month <= 12) {
+        alert ("Зима");
       if (month >= 3 && month <= 5) {
-        return "Весна";
+        alert("Весна");
       } else if (month >= 6 && month <= 8) {
-        return "Лето";
+        alert("Лето");
       } else if (month >= 9 && month <= 11) {
-        return "Осень";
-      } else {
-        return "Зима";
-      }
+        alert("Осень");
+      } 
     } else {
-      return "Неправильный номер месяца";
+      alert("Неправильный номер месяца");
     }
 }
+
+getSeason();
    
-function playSeasonGame() {
-    const monthInput = document.getElementById("monthInput").value;
-    const season = getSeason(parseInt(monthInput));
-    const resultText = document.getElementById("resultText");
-    if (resultText) {
-        resultText.textContent = `Месяц ${monthInput} относится к времени года: ${season}`;
-    } else {
-        console.error("Элемент 'resultText' не найден");
-    }
-}
