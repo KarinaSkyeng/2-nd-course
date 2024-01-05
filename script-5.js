@@ -9,7 +9,7 @@
  //2
  function evenOrOdd(number) {
 
-  if (number % 2 == 0) {
+  if (number % 2 === 0) {
     return `Число четное`;
   }
     
@@ -39,22 +39,25 @@
  function userAge() {
   let age = prompt("Сколько вам лет?");
 
-  if (isNaN(age) || age === null) {
+  if (!age || !age.trim()) {
+    alert("Вы не ввели возраст!");
+}
+  else if (isNaN(age) || age === null) {
       console.log("Вы ввели неправильное значение");    
   }
     else {
-      age = parseInt(age);
+      age = Number(age);
 
       if (age < 0) {
-          console.log("Вы ввели неправильное значение");
+          alert("Вы ввели неправильное значение");
       } 
       
       else if (age <= 12) {
-          console.log("Привет, друг!");
+          alert("Привет, друг!");
       }
       
       else {
-        console.log("Добро пожаловать!");
+        alert("Добро пожаловать!");
       }
           
     }
@@ -87,7 +90,7 @@ function cubeNumber() {
       return;
     }
 
-    num = parseFloat(userInput);
+    num = Number(userInput);
 
     if (!isNaN(num)) {      
       break;
@@ -105,25 +108,25 @@ function cubeNumber() {
 cubeNumber();
 
 // 7
-let circle1 = {
-  radius: 5,
-  getArea: function () {
+  function getArea() {
     return Math.PI * this.radius ** 2;
-  },
-  getPerimeter: function () {
+  }
+  
+  function getPerimeter() {
     return 2 * Math.PI * this.radius;
   }
-};
 
-let circle2 = {
-  radius: 8,
-  getArea: function () {
-    return Math.PI * this.radius ** 2;
-  },
-  getPerimeter: function () {
-    return 2 * Math.PI * this.radius;
-  }
-};
+  let circle1 = {
+    radius: 5,
+    getArea: getArea,
+    getPerimeter: getPerimeter
+  };
+
+  let circle2 = {
+    radius: 8,
+    getArea: getArea,
+    getPerimeter: getPerimeter
+  };
 
 console.log("Площадь circle1:", circle1.getArea());
 console.log("Периметр circle1:", circle1.getPerimeter());
