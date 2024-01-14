@@ -11,9 +11,7 @@
 
   if (number % 2 === 0) {
     return `Число четное`;
-  }
-    
-  else {
+  } else {
     return 'число не четное';
   }
  }
@@ -66,12 +64,12 @@
  userAge();
 
  // 5
- function multiplyNumbers(num1, num2) {
+ function multiplyNumbers(a, b) {
   
-  if (isNaN(num1) || isNaN(num2)) {
+  if (isNaN(a) || isNaN(b)) {
       return 'Одно или оба значения не являются числом';
   } else {      
-      return num1 * num2;
+      return a * b;
   }
 }
 
@@ -151,5 +149,5 @@ function getSeason() {
     }
 }
 
-getSeason();
+console.log(getSeason());
    

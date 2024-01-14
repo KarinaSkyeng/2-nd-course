@@ -1,49 +1,50 @@
 // 1
 const arr = [1, 5, 4, 10, 0, 3];
 
-for (let i= 0; i < arr.length; i++) {
-    if (arr[i] === 10) {
+for (let value of arr) {
+    console.log(value);
+    if (value === 10) {
         console.log("Найдено значение 10");
         break;
     }
-
-    console.log(arr[i]);
-}
+ }
 
 // 2
-let numbs = [1, 5, 4, 10, 0, 3];
-let targetNumber = 4;
-let index = numbs.indexOf(targetNumber);
-
+const numbs = [1, 5, 4, 10, 0, 3];
+const targetNumber = 4;
+const index = numbs.indexOf(targetNumber);
 console.log(`Индекс числа ${targetNumber}: ${index}`);
 
 // 3
-let numbers = [1, 3, 5, 10, 20];
-numbers = numbers.join(' ');
-
-console.log(numbers);
+const numbers = [1, 3, 5, 10, 20];
+const result = numbers.join(' ');
+console.log(result);
 
 //4
-
+const userArr = [];
+for (let i = 0; i < 3; i++) {
+    let innerArr = [];
+    for (let j= 0; j < 3; j++) {
+        innerArr.push(1);
+    } 
+    userArr.push(innerArr);
+}
+console.log(userArr)
 
 // 5
-let numbs1 = [1, 1, 1];
-numbs1.push('2, 2, 2');
-
+const numbs1 = [1, 1, 1];
+numbs1.push(2, 2, 2);
 console.log(numbs1);
 
 // 6
-let massiv = [9, 8, 7, 'a', 6, 5];
-
-massiv.sort((a, b) => a - b);
-
-let filteredMassiv = massiv.filter(item => !isNaN(item));
-console.log(filteredMassiv);
+const num = [9, 8, 7, 'a', 6, 5];
+num.sort((a, b) => a - b).pop();
+console.log(num);
 
 // 7 
-let numbers1 = [9, 8, 7, 6, 5];
+const numbers1 = [9, 8, 7, 6, 5];
 
-    let userNumber = prompt("Угадайте число");
+    const userNumber = prompt("Угадайте число");
     if (numbers1.includes(parseInt(userNumber))) {
         alert("Угадал");
     } else {
@@ -51,41 +52,69 @@ let numbers1 = [9, 8, 7, 6, 5];
     }
 
 // 8
-let string = 'abcdef';
-
-let reversedString = string.split('').reverse().join('');
-
+const string = 'abcdef';
+const reversedString = string.split('').reverse().join('');
 console.log(reversedString);
 
 // 9
-let multiMassiv = [[1, 2, 3,],[4, 5, 6]];
-
-let flatMassiv = multiMassiv.flat();
-
-console.log(flatMassiv);
+const getArr = [[1, 2, 3,],[4, 5, 6]];
+const flatArr = getArr.flat();
+console.log(flatArr);
 
 // 10
-let numbersArray = [2, 8, 4, 7, 1, 6, 9, 3, 5, 10];
-
-for (let i = 0; i < numbersArray.length - 1; i++) {
-
-    let currentElement = numbersArray[i];
-    let nextElement = numbersArray[i + 1];
-
-    let sum = currentElement + nextElement;
-    console.log(`Сумма элементов ${currentElement} и ${nextElement}: ${sum}`);
+const numbersArray = [2, 8, 4, 7, 1, 6, 9, 3, 5, 10];
+    for (let i = 0; i < numbersArray.length - 1; i++) {
+       console.log(numbersArray[i] + numbersArray[i + 1]);
 }
 
 // 11
-function squareNumbers(numbers) {
-
-    let squares = numbers.map((number) => number ** 2);
+function squareNumbers(nums) {
+    const squares = nums.map((number) => number ** 2);
     return squares;
 }
 
-let inputArray = [1, 2, 3, 4, 5];
-let resultArray = squareNumbers(inputArray);
-
+const inputArray = [1, 2, 3, 4, 5];
+const resultArray = squareNumbers(inputArray);
 console.log(resultArray);
 
+// 12
+function getLengthWords(words) {
+    const wordLength = words.map((word) => word.length);
+    return wordLength;
+}
 
+const inputArray1 = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+const resultArray1 = getLengthWords(inputArray1);
+
+console.log(resultArray1);
+
+// 13
+function filterPositive(array) {
+    const negativeValues = array.filter((value) => value < 0);
+    return negativeValues;
+}
+
+console.log(filterPositive([-1, 0, 5, -10, 56])); 
+console.log(filterPositive([-25, 25, 0, -1000, -2]));
+
+// Необязательные задания: 14
+const originalArray = Array.from({length: 10}, () => Math.floor(Math.random() * 11));
+
+function filterEven(value) {
+    return value % 2 === 0;
+}
+
+const evenArray = originalArray.filter(filterEven);
+
+console.log('Исходный массивв', originalArray);
+console.log('Массив с четными значениями:', evenArray);
+
+// 15
+const array = Array.from({length: 6}, () => Math.floor(Math.random() * 10) + 1);
+
+const sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+const average = sum / array.length;
+
+console.log('Исходный массив:', array);
+console.log('Среднее арифметическое:', average);
