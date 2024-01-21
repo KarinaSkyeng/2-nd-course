@@ -6,14 +6,7 @@ console.log(str);
 
 // 2 
 function filterWords(words, search) {
-    const filteredWords = [];
-
-    words.forEach((word) => {
-        if (word.toLowerCase().includes(search.toLowerCase())) {
-            console.log(word);
-        }
-});
-    return filteredWords;
+    return words.filter((word) => word.toLowerCase().startsWith(search.toLowerCase()));
 }
 
 const words = ['Сметана', 'Хор', 'Стена', 'Хорошо', 'Картина', 'Хоровод', 'Лошадь'];
@@ -110,12 +103,11 @@ console.log(currentDate);
     let userFirstGuess = prompt('Чему равнялся первый элемент массива?');
     let userLastGuess = prompt('Чему равнялся последний элемент массива?');
 
-    if (userFirstGuess === words[0] && userLastGuess === words[words.length - 1]) {
+    if (userFirstGuess.toLowerCase() === words[0].toLowerCase() && userLastGuess.toLowerCase() === words[words.length - 1].toLowerCase()) {
         alert('Поздравляем! Вы угадали оба элемента.');
-    } else if(userFirstGuess === words[0] || userLastGuess === words[words.length - 1]) {
+    } else if(userFirstGuess.toLowerCase() === words[0].toLowerCase() || userLastGuess.toLowerCase() === words[words.length - 1].toLowerCase()) {
         alert('Вы были близки к победе!');
     } else {
         alert('Вы ответили неверно.');
     }
-
   }
