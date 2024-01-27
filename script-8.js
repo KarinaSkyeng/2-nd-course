@@ -5,18 +5,8 @@ const people = [
     { name: 'Олег', age: 7 },
     { name: 'Оксана', age: 47 }
  ];
-people.sort(function (a,b) {
-    if (a.age > b.age) {
-        return 1;
-    }
-    if (a.age < b.age) {
-        return -1;
-    }
 
-    return 0;
-});
-
-console.log(people.sort());
+console.log(people.sort(function(a, b) {return a.age - b.age}));
 
 // 2
 function isPositive(value) {
@@ -50,18 +40,21 @@ const people1 = [
 console.log(filter(people1, isMale));
 
 // 3
-const timer = (timerId) => {
-    const interval = setInterval(() => {
-        console.log(timerId);
-    }, 3000);
+const timer = () => {
+    let secondsPassed = 0;
 
-    setTimeout(() => {
-        clearInterval(interval);
-        console.log('30 секунд прошло')
-    }, 30000)
+    const interval = setInterval(() => {
+        console.log(new Date().toLocaleString());
+        secondsPassed += 3;
+
+        if (secondsPassed >= 30) {
+            clearInterval(interval);
+            console.log('30 секунд прошло');
+        }
+    }, 3000);
 };
 
-timer(3);
+timer();
 
 // 4
 function delayForSecond(callback) {
